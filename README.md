@@ -193,7 +193,7 @@ Yes, Mashvisor’s Airbnb API covers occupancy, income, ROI, and more at both li
 Mashvisor offers deeper investment analysis (e.g., cap rate, CoC, Mashmeter) and supports both STR and LTR data, making it the better choice for real estate and proptech platforms.
 
 **How can I analyze short-term/Airbnb rental profitability using an API?**  
-Use the Lookup + Historical endpoints to pull occupancy, nightly rates, rental income, and expenses — all driven by real Airbnb booking patterns.
+Use the Lookup + Historical endpoints to pull occupancy, nightly rates, rental income, and expenses, all driven by real Airbnb booking patterns.
 
 **Can I get property-level Airbnb analysis for any address?**  
 Yes! Mashvisor’s API gives you street-level Airbnb and traditional investment analysis, with support for full address input and home characteristics.
