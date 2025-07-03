@@ -153,11 +153,13 @@ Contact us for custom quotas or if you're interested in testing higher volumes.
 
 ---
 
+
 ## 🧑‍💻 Example Request
 
 ```bash
 curl -X GET "https://api.mashvisor.com/v1.1/client/lookup?address=3703%20Endicott%20Dr&city=Killeen&state=TX&zip_code=76549&resource=airbnb" \
   -H "x-api-key: YOUR_API_KEY_HERE"
+```
 
 ---
 
