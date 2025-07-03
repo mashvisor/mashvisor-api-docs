@@ -3,7 +3,6 @@
 
 Welcome to the official Mashvisor API documentation repository. Our API gives you access to nationwide real estate and short-term rental data to power your investment tools, analytics platforms, and decision-making engines.
 
----
 
 ## 🔥 Who This API Is For
 
@@ -48,7 +47,7 @@ curl -X GET "https://api.mashvisor.com/v1.1/client/lookup?address=3703%20Endicot
 <details>
 <summary><strong>🏡 Rento Calculator API</strong></summary>
 
-Delivers instant investment insights for any location — including:
+Delivers instant investment insights for any location including:
 
 - Cap rate, cash on cash return
 - Median home price
@@ -59,7 +58,7 @@ Delivers instant investment insights for any location — including:
 **Required:** `state`  
 **Optional:** `address`, `zip_code`, `bedrooms`, `bathrooms`, `home_type`
 
-✅ You can retrieve detailed Airbnb and traditional analysis for **any U.S. street address** — not just zip codes or cities.
+✅ You can retrieve detailed Airbnb and traditional analysis for **any U.S. street address**; not just zip codes or cities.
 
 [Explore endpoint](https://www.mashvisor.com/api-doc/#lookup)
 </details>
@@ -67,11 +66,11 @@ Delivers instant investment insights for any location — including:
 <details>
 <summary><strong>🏘️ Property Details & Comps</strong></summary>
 
-Fetch full property and owner info using:
+Fetch full property details and owner info using:
 
-- Address, parcel ID, MLS ID
+- Address, parcel ID, or MLS ID
 - Beds, baths, square footage
-- Pricing and transaction history
+- Pricing, taxing, images, nearby listings, and transaction history
 
 **Required:** `state`  
 **Optional:** `address`, `zip_code`, `city`, `mls_id`
@@ -101,10 +100,10 @@ Retrieve up to 36 months of historical performance including:
 ## 💼 Use Cases
 
 ### 1. **Build Your Own Airbnb ROI Calculator**
-Use the Lookup + Historical endpoints to create a dynamic investment analyzer for any address or zip code.
+Use the Lookup + List-comps + Historical endpoints to create a dynamic investment analyzer for any address or zip code.
 
 ### 2. **Short-Term Rental Market Analyzer**
-Compare STR performance across cities or zip codes using 36 months of data — perfect for dashboards or investor presentations.
+Compare STR performance across cities or zip codes using 36 months of data, perfect for dashboards or investor presentations.
 
 ### 3. **Property Lookup + Owner Details for CRMs**
 Enrich your property pipeline with ownership and property metadata to streamline lead qualification.
@@ -135,8 +134,9 @@ Contact us for custom quotas or if you're interested in testing higher volumes.
 - Pull **Airbnb & traditional rental comps**
 - Estimate **rental income, cap rate, and occupancy**
 - Access historical performance & investment analysis
-- Search active MLS listings across the U.S.
-- Retrieve property details by address or Airbnb ID
+- Search MLS listings across the U.S.
+- Retrieve property details by address
+- Retrieve Airbnb listing details by Airbnb ID
 - Get short-term rental regulations by city
 
 ---
@@ -148,7 +148,7 @@ Contact us for custom quotas or if you're interested in testing higher volumes.
 | [`/lookup`](https://www.mashvisor.com/api-doc/#lookup) | Get performance and rent estimates by address |
 | [`/list-comps`](https://www.mashvisor.com/api-doc/#list-comps) | Pull short-term or long-term rental comps |
 | [`/get-airbnb-listing-info`](https://www.mashvisor.com/api-doc/#get-airbnb-listing-info) | Retrieve details of an Airbnb listing |
-| [`/get-property`](https://www.mashvisor.com/api-doc/#get-property) | Get images, tax history, and MLS info |
+| [`/get-property`](https://www.mashvisor.com/api-doc/#get-property) | Get property details, characteristics, images, tax history, price history, transactions, and MLS info |
 | [`/historical-performance`](https://www.mashvisor.com/api-doc/#historical-performance) | Analyze 2–3 years of Airbnb performance |
 
 ---
@@ -172,7 +172,7 @@ Visit [mashvisor.com/data-api](https://www.mashvisor.com/data-api) to request ac
 Mashvisor’s API delivers Airbnb data like average daily rates (ADR), occupancy rates, revenue estimates, cap rates, cash on cash return (CoC), historical data, and seasonal performance.
 
 **Can I get Airbnb occupancy and income data by property Address?**  
-Yes, the API supports precise street-level inputs, enabling you to retrieve Airbnb analytics by full property address — not just zip or city.
+Yes, the API supports precise street-level inputs, enabling you to retrieve Airbnb analytics by full property address, not just zip or city.
 
 **Does the Mashvisor API include historical Airbnb data?**  
 Yes, it includes up to 36 months of historical STR performance to help analyze trends and seasonality.
@@ -187,7 +187,7 @@ Absolutely. Revenue managers and STR pricing systems can use it to retrieve ADR,
 Mashvisor ranks as one of the most comprehensive APIs for STRs, with rich property-level and market-wide insights including reviews, comps, and income data.
 
 **Is there an API for short-term rental analytics?**  
-Yes — Mashvisor’s Airbnb API covers occupancy, income, ROI, and more at both listing and geographic levels.
+Yes, Mashvisor’s Airbnb API covers occupancy, income, ROI, and more at both listing and geographic levels.
 
 **AirDNA vs. Mashvisor – which one has a better API?**  
 Mashvisor offers deeper investment analysis (e.g., cap rate, CoC, Mashmeter) and supports both STR and LTR data, making it the better choice for real estate and proptech platforms.
@@ -199,7 +199,7 @@ Use the Lookup + Historical endpoints to pull occupancy, nightly rates, rental i
 Yes! Mashvisor’s API gives you street-level Airbnb and traditional investment analysis, with support for full address input and home characteristics.
 
 **Can I get AVM and property characteristics from the API?**  
-Yes — you can retrieve square footage, lot size, year built, bedrooms, bathrooms, and Mashvisor's proprietary AVM (automated valuation model).
+Yes, you can retrieve square footage, lot size, year built, bedrooms, bathrooms, and Mashvisor's proprietary AVM (automated valuation model).
 
 **Is the data only at the neighborhood or zip level?**  
 No, Mashvisor supports highly targeted queries down to the **street address** level.
